@@ -1,4 +1,5 @@
 import com.zzzsj.sort.bubble.BubbleSort;
+import com.zzzsj.sort.insertion.InsertionSort;
 import com.zzzsj.sort.selection.SelectionSort;
 import org.junit.Test;
 
@@ -24,5 +25,14 @@ public class SortTest {
     public void SelectionSort() {
         SelectionSort selectionSort = new SelectionSort();
         System.out.println(Arrays.toString(selectionSort.sort(arr)));
+    }
+
+    /**
+     * 插入排序
+     */
+    @Test
+    public void InsertionSort() {
+        InsertionSort insertionSort = new InsertionSort();
+        System.out.println(Arrays.toString(insertionSort.sort(arr)));
     }
 }
